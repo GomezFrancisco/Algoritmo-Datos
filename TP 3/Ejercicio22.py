@@ -18,7 +18,7 @@ Personajes_MCU = [
     {'Nombre_Personaje': 'Tony Stark','Nombre_Superheroe': 'Iron Man','Género': 'M'},
     {'Nombre_Personaje': 'Steve Rogers','Nombre_Superheroe': 'Capitán América','Género': 'M'},
     {'Nombre_Personaje': 'Natasha Romanoff','Nombre_Superheroe': 'Black Widow','Género': 'F'},
-    {'Nombre_Personaje': 'Brie Larson','Nombre_Superheroe': 'Capitana América','Género': 'F'},
+    {'Nombre_Personaje': 'Brie Larson','Nombre_Superheroe': 'Capitana Marvel','Género': 'F'},
     {'Nombre_Personaje': 'Scott Lang','Nombre_Superheroe': 'Ant-Man','Género': 'M'},
     {'Nombre_Personaje': 'Carol Danvers','Nombre_Superheroe': 'S','Género': 'F'}]
 
@@ -30,8 +30,8 @@ for x in Personajes_MCU:
 while cola.size() > 0:
     Personaje = cola.atention()
     
-    if Personaje['Nombre_Superheroe'] == 'Capitana América':
-        print ('El nombre de la Capitana América es: ', Personaje['Nombre_Personaje'])
+    if Personaje['Nombre_Superheroe'] == 'Capitana Marvel':
+        print ('El nombre de la Capitana Marvel es: ', Personaje['Nombre_Personaje'])
     
     if Personaje['Género'] == 'F':
         print ('El nombre del superheroe es: ', Personaje['Nombre_Superheroe'])
