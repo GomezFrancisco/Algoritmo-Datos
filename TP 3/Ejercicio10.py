@@ -15,7 +15,7 @@ from cola import Cola
 Notificaciones = [
     {'Hora': 11.43, 'Aplicación': 'Facebook','Mensaje':'a'},
     {'Hora': 12.43, 'Aplicación': 'Twitter','Mensaje':'a' },
-    {'Hora': 13.43, 'Aplicación': 'Twitter','Mensaje': 'Phyton'},
+    {'Hora': 13.43, 'Aplicación': 'Twitter','Mensaje': 'Lenguaje Python'},
     {'Hora': 14.43, 'Aplicación': 'Instagram','Mensaje': 'a'},
     {'Hora': 15.57, 'Aplicación': 'LinkedIn','Mensaje': 'a'},
     {'Hora': 16.00, 'Aplicación': 'Facebook','Mensaje':'a' }
@@ -37,7 +37,6 @@ while cola.size() > 0:
         cola_auxiliar.arrive(Notificación)
     if (Notificación['Aplicación'] == 'Twitter') and  ('Python' in Notificación['Mensaje']):
         cola_twitter.arrive(Notificación)
-        #print ('Hora: ', Notificación['Hora'], 'Aplicación: ', Notificación['Aplicación'], 'Mensaje: ', Notificación['Mensaje'])
-        print (Notificación)
+        print ('Hora: ', Notificación['Hora'],'| ', 'Aplicación: ', Notificación['Aplicación'],'| ', 'Mensaje: ', Notificación['Mensaje'])
 
 print ('La cantidad de notificaciones que se almacenaron fue de: ', (pila.size()))
