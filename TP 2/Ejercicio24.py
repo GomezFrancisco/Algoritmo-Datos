@@ -28,7 +28,7 @@ cont = 0
 while pila.size() > 0:
     Personaje = pila.pop();
     if Personaje['Nombre'] == 'Rocket Raccoon' or Personaje['Nombre'] == 'Groot':
-        print (pila.size()+ 1)
+        print (Personaje['Nombre'], ' se encuentra en la posición: ', (pila.size()+ 1))
     elif Personaje['Participaciones'] > 5:
         cont += 1
     elif Personaje['Nombre'] == 'Black Widow':
