@@ -20,7 +20,7 @@ Personajes_MCU = [
     {'Nombre_Personaje': 'Natasha Romanoff','Nombre_Superheroe': 'Black Widow','Género': 'F'},
     {'Nombre_Personaje': 'Brie Larson','Nombre_Superheroe': 'Capitana América','Género': 'F'},
     {'Nombre_Personaje': 'Scott Lang','Nombre_Superheroe': 'Ant-Man','Género': 'M'},
-    {'Nombre_Personaje': 'Carol Danvers','Nombre_Superheroe': 'x','Género': 'F'}]
+    {'Nombre_Personaje': 'Carol Danvers','Nombre_Superheroe': 'S','Género': 'F'}]
 
 cola = Cola()
 
