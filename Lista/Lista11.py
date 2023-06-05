@@ -97,14 +97,21 @@ else:
 print()
 
 #6
-'''episodiosDelete = [4, 5, 6]
+episodiosDelete = [4, 5, 6]
+pos = 0
 for i in range(lista.size()):
-    print()
-    print(lista.get_element_by_index(i))
-    if episodiosDelete in lista.get_element_by_index(i).episodio:
-        lista.delete(lista.get_element_by_index(i).nombre ,'nombre')
+    control = True
+    espisodespresonaje = lista.get_element_by_index(pos).episodio
+    for episode in episodiosDelete:
+        if episode not in espisodespresonaje:
+            control = False
+            break
+    if control:
+        lista.delete(lista.get_element_by_index(pos).nombre, 'nombre')
+        pos -= 1
+    pos += 1
 lista.barrido()
-print()'''
+print()
 
 #7
 for i in range (lista.size()):
