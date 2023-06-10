@@ -66,7 +66,7 @@ class Lista():
         for value in self.__elements:
             print(value)
 
-    def order_by(self, criterio=None, reverse=False):
+    def order_by(self, criterio=None, reverse=False): #False = m-M, True = M-m
         dic_atributos = self.__elements[0].__dict__
         if criterio in dic_atributos:
             def func_criterio(valor):
