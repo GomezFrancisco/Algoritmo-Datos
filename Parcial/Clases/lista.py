@@ -76,14 +76,6 @@ class Lista():
         else:
             print('no se puede ordenar por este criterio')
 
-    # def get_element_by_value(self, value):
-    #     return_value = None
-    #     pos = self.search(value)
-
-    #     if pos is not None:
-    #         return_value = self.__elements[pos]
-    #     return return_value
-
     def get_element_by_index(self, index):
         return_value = None
         if index >= 0 and index < self.size():
