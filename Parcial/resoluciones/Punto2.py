@@ -27,7 +27,7 @@ S12 = Superheroe("c", "c", "c", 3)
 S13 = Superheroe("d", "d", "d", 4)
 S14 = Superheroe("e", "e", "e", 5)
 S15 = Superheroe("f", "f", "f", 6)
-S17 = Superheroe("g", "g", "g", 0)
+S18 = Superheroe("g", "g", "g", 7)
 
 L = Lista()
 
@@ -46,7 +46,7 @@ L.insert(S12, 'nombreSuper')
 L.insert(S13, 'nombreSuper')
 L.insert(S14, 'nombreSuper')
 L.insert(S15, 'nombreSuper')
-L.insert(S17, 'superNombre')
+L.insert(S18, 'nombreSuper')
 
 # ------------------------------------------
 
