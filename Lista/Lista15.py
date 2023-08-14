@@ -131,8 +131,6 @@ for i in range(lista_entrenadores.size()):
     porcentaje_victorias = (value.cb_ganadas * 100) // combates_totales
     if porcentaje_victorias > 79:
         print (f'El entrenador {value.nombre} obtuvo un porcentaje de victorias mayor al 79%')
-    else:
-        print (f'El entrenador {value.nombre} obtuvo un porcentaje de victorias menor al 79%')
 print()
 #! F
 for i in range(lista_entrenadores.size()):
