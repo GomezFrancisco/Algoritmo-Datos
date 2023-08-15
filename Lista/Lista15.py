@@ -153,7 +153,10 @@ if search_1 != None:
         nivel = pokemons.get_element_by_index(i).nivel
         cantidad_pokemons += 1
         cantidad_niveles = cantidad_niveles + nivel
-    print (f'El promedio de niveles del entrenador {entrenador.nombre} es de {cantidad_niveles // cantidad_pokemons}')
+    if cantidad_pokemons != 0:
+        print (f'El promedio de niveles del entrenador {entrenador.nombre} es de {cantidad_niveles // cantidad_pokemons}')
+    else:
+        print(f'El entrenador {B1} no tiene pokemons en su equipo.')
 else:
     print(f'El entrenador {B1} no se encuentra en la lista.')
 print()
@@ -176,10 +179,10 @@ for i in range(lista_entrenadores.size()):
     value = lista_entrenadores.get_element_by_index(i)
     entrenador, sublista = value[0], value[1]
     check = 0
-    for x in range(sublista.size()):
+    for x in range(sublista.size()-1):
         first = sublista.get_element_by_index(x)
         second = sublista.get_element_by_index(x+1)
-        if first == second:
+        if first.nombre == second.nombre:
             check += 1
             break
     if check == 1:
@@ -191,21 +194,21 @@ for i in range(lista_entrenadores.size()):
 print()
 #! J
 L1 = ['Tyrantrum', 'Terrakion', 'Wingull']
-B2 = input('Ingrese el nombre del entrenador: ')
-search_2 = lista_entrenadores.search(B2, 'nombre')
 
-if search_2 != None:
-    value = lista_entrenadores.get_element_by_index(search_2)
+for i in range(lista_entrenadores.size()):
+    value = lista_entrenadores.get_element_by_index(i)
     entrenador, sublista = value[0], value[1]
+    check = 0
     for i in range(sublista.size()):
         pokemon = sublista.get_element_by_index(i)
         if pokemon.nombre in L1:
-            print(f'El entrenador {B2} tiene a Willgull o Terrakion o Tyrantrum en su equipo.')
-    print(f'El entrenador {B2} no tiene a Willgull o Terrakion o Tyrantrum en su equipo.')
-else:
-    print(f'El entrenador {B2} no se encuentra en la lista.')
+            print(f'El entrenador {entrenador.nombre} tiene a Willgull o Terrakion o Tyrantrum en su equipo.')
+            check += 1
+    if check == 0:
+        print(f'El entrenador {entrenador.nombre} no tiene a Willgull o Terrakion o Tyrantrum en su equipo.')
+    else: 
+        pass
 print()
-
 #! K
 B3 = input('Ingrese el nombre del entrenador: ')
 search_3 = lista_entrenadores.search(B3, 'nombre')
