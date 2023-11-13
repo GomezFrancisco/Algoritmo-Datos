@@ -65,12 +65,15 @@ for arbol in bosque:
 print(f'se necesitara un total de {acum} metros de cables')
 
 #!D
-paso = grafo.dijkstra("habitacion 1","sala de estar")
-cable=0
+camino = grafo.dijkstra("habitacion 1","sala de estar")
 
-while paso.size()>0:
-    value = paso.pop()
-    if value[0] == "sala de estar":
+acum=0
+fin = "sala de estar"
+while camino.size()>0:
+    value = camino.pop()
+    if value[0] == fin:
+        print(value)
+        fin = value[2]
         acum+=value[1]
 
 print(f"Se necesitan {acum} metros para conectar la habitacion 1 y la sala de estar")
